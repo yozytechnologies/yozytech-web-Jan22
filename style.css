@@ -2400,8 +2400,8 @@ blockquote cite:before {
   line-height: 38px;
 }
 .full-width-header .rs-header .topbar-area .rs-contact-info .contact-part i:before {
-  font-size: 26px;
-  color: #106eea;
+  font-size: 20px;
+  color: #ffa500;
 }
 .full-width-header .rs-header .topbar-area .rs-contact-info .contact-part .contact-info {
   float: left;
