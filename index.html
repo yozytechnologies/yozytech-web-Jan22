@@ -2,6 +2,10 @@
 <html lang="zxx">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -13,7 +17,49 @@
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
+    function front() {
+  var f = document.getElementById("myFrontend");
+  var b = document.getElementById("myBackend");
+  var s = document.getElementById("myServer");
+  var d = document.getElementById("myDatabase");
+    f.style.display = "flex";
+    b.style.display = "none";
+    s.style.display = "none";
+    d.style.display = "none";
+}
+function backend() {
+  var f = document.getElementById("myFrontend");
+  var b = document.getElementById("myBackend");
+  var s = document.getElementById("myServer");
+  var d = document.getElementById("myDatabase");
+    f.style.display = "none";
+    b.style.display = "flex";
+    s.style.display = "none";
+    d.style.display = "none";
+}
+function server() {
+  var f = document.getElementById("myFrontend");
+  var b = document.getElementById("myBackend");
+  var s = document.getElementById("myServer");
+  var d = document.getElementById("myDatabase");
+    f.style.display = "none";
+    b.style.display = "none";
+    s.style.display = "flex";
+    d.style.display = "none";
+}
+function database() {
+var f = document.getElementById("myFrontend");
+  var b = document.getElementById("myBackend");
+  var s = document.getElementById("myServer");
+  var d = document.getElementById("myDatabase");
+  f.style.display = "none";
+  b.style.display = "none";
+  s.style.display = "none";
+  d.style.display = "flex";
+}
+
     </script>
+   
     <!--End of Tawk.to Script-->
     <!-- <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -77,7 +123,7 @@
     <!--Preloader area End here-->
 
     <!-- Main content Start -->
-    <div class="main-content">
+    < class="main-content">
 
         <!--Full width header Start-->
         <div class="full-width-header">
@@ -144,15 +190,15 @@
                             <div class="col-lg-9 text-right">
                                 <div class="rs-menu-area">
                                     <div class="main-menu">
-                                        <nav class="rs-menu pr-10 lg-pr-20 md-pr-0">
+                                        <nav class="rs-menu pr-0 lg-pr-0 md-pr-0">
                                             <ul class="nav-menu">
-                                                <li><a href="#">Home</a></li>
-                                                <li><a href="#about">About</a></li>
-                                                <li><a href="#services">Services</a></li>
-                                                <li><a class=" " href="#products">Products</a></li>
-                                                <li><a class=" " href="#technologies">Technologies</a></li>
-                                                <li><a class=" " href="#testimonials">Testimonials</a></li>
-                                                <li><a class=" " href="#contact">Contact</a></li>
+                                                <li><a href="#home">HOME</a></li>
+                                                <li><a href="#about">ABOUT</a></li>
+                                                <li><a href="#services">SERVICES</a></li>
+                                                <li><a class=" " href="#products">PRODUCTS</a></li>
+                                                <li><a class=" " href="#technologies">TECHNOLOGIES</a></li>
+                                                <li><a class=" " href="#testimonials">TESTIMONIALS</a></li>
+                                                <li><a class=" " href="#contact">CONTACT</a></li>
                                             </ul> <!-- //.nav-menu -->
                                         </nav>
                                     </div> <!-- //.main-menu -->
@@ -203,9 +249,10 @@
             <!-- Canvas Menu end -->
         </div>
         <!--Full width header End-->
+        
 
         <!-- Banner Section Start -->
-        <div class="rs-banner style3 pt-100 pb-100">
+        <div id="home" class="rs-banner style3 pt-100 pb-100">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -221,7 +268,7 @@
                                     <div class="rs-videos">
                                         <div class="animate-border white-color">
                                             <a class="popup-border popup-videos"
-                                                href="https://www.youtube.com/watch?v=YLN1Argi7ik">
+                                                >
                                                 <i class="fa fa-play"></i>
                                             </a>
                                         </div>
@@ -235,15 +282,17 @@
             <img class="d-none d-md-block images-part"
                 src="https://rstheme.com/products/html/braintech/assets/images/banner/banner-3.png" alt="">
         </div>
-        <!-- Banner Section End -->
-        <div id="about" class="about rs-testimonial bgProject main-home gray-color pt-120 pb-120 md-pt-80 md-pb-80">
+        <!-- About Section End -->
+        <div id="about" class="about rs-testimonial bgProject main-home gray-color pt-110 pb-0 md-pt-40 md-pb-0">
             <div class="container">
                 <div class="sec-title2 text-center mb-45">
 
                     <h2 class="title">
                         Who We Are
                     </h2>
-                    <span class="">WE ARE AN IT SERVICE PROVIDER</span>
+                    <div class="heading-line">
+
+                    </div>
                     <div class="desc">
                         We specialize in creative, sustainable technology driven solutions, services and products
                     </div>
@@ -322,86 +371,80 @@
                 </div>
             </div>
         </div>
+        <!-- About Section End-->
 
         <!-- Services Section Start -->
-        <div id="services" class="rs-services style3 bgProject pt-110 pb-120 md-pt-75 md-pb-80">
+        <div id="services" class="rs-services style3 bgProject pt-110 pb-0 md-pt-40 md-pb-0">
             <div class="container">
                 <div class="sec-title2 text-center mb-45">
                     <!-- <span class="sub-text">Services</span> -->
-                    <h2 class="title testi-title  ">
+                    <h2 class="title ">
                         What We Do
                     </h2>
+                    <div class="heading-line">
+
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="services-item">
-                            <div class="services-icon">
+                        <div class="services-item" id="service-detail">
+                            <div class="services-icon row">
                                 <div class="image-part">
                                     <img class="main-img" src="assets/images/services/style2/main-img/1.png" alt="">
                                     <img class="hover-img" src="assets/images/services/style2/hover-img/1.png" alt="">
                                 </div>
+                                <div class="services-content services-text">
+                                    <h5 class="title-service"><a >Enterprise Solutions</a></h5></div>
                             </div>
                             <div class="services-content">
-                                <div class="services-text">
+                                <!-- <div class="services-text">
                                     <h4 class="title"><a href="software-development.html">Enterprise Solutions</a></h4>
-                                </div>
+                                </div> -->
                                 <div class="services-desc">
                                     <p>
-                                        With competitive, complex operations and convergence of cloud services, data
-                                        science, business intelligence, AI & Automation has become everyday need in
-                                        Enterprise Operations. We are the technology partners on your digital
-                                        transformation journey, supporting and enabling you all along with your
-                                        customers for Enterprise
+                                        Enterprise solutions are an emerging approach to integrate multiple facets of a company’s business through the interchange of information from a various business process areas and related databases.
                                     </p>
                                 </div>
-                                <!-- <div class="serial-number">
-                                        01 </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="services-item pink-bg">
-                            <div class="services-icon">
+                    <div class="col-lg-4 col-md-6 mb-20" >
+                        <div class="services-item pink-bg" id="service-detail">
+                            <div class="services-icon row">
                                 <div class="image-part">
                                     <img class="main-img" src="assets/images/services/style2/main-img/2.png" alt="">
                                     <img class="hover-img" src="assets/images/services/style2/hover-img/2.png" alt="">
                                 </div>
+                                <div class="services-content services-text">
+                                    <h5 class="title-service"><a >Implementation & Support</a></h5></div>
                             </div>
                             <div class="services-content">
-                                <div class="services-text">
+                                <!-- <div class="services-text">
                                     <h4 class="title"><a href="web-development.html">Implementation & Support</a></h4>
-                                </div>
+                                </div> -->
                                 <div class="services-desc">
                                     <p>
-                                        Cloud migration is the process of moving digital assets — like data, workloads,
-                                        IT resources, or applications — to cloud infrastructure. Cloud migration
-                                        commonly refers to moving tools and data from old, legacy infrastructure or an
-                                        on-premises* data center to the cloud
+                                        Implementation and support service helps to configure your platform, map your processes, migrate data and enhance existing functionalities through our technological support resources.
                                     </p>
                                 </div>
-                                <!-- <div class="serial-number">
-                                        02 </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="services-item aqua-bg">
-                            <div class="services-icon">
+                    <div class="col-lg-4 col-md-6 mb-20" >
+                        <div class="services-item aqua-bg" id="service-detail">
+                            <div class="services-icon row">
                                 <div class="image-part">
                                     <img class="main-img" src="assets/images/services/style3/main-img/9.png" alt="">
                                     <img class="hover-img" src="assets/images/services/style3/hover-img/9.png" alt="">
                                 </div>
+                                <div class="services-content services-text">
+                                    <h5 class="title-service"><a >Application Development</a></h5>
+                                </div>
                             </div>
                             <div class="services-content">
-                                <div class="services-text">
-                                    <h4 class="title"><a href="analytic-solutions.html">Application Development</a></h4>
-                                </div>
                                 <div class="services-desc">
                                     <p>
-                                        Cloud migration is the process of moving digital assets — like data, workloads,
-                                        IT resources, or applications — to cloud infrastructure. Cloud migration
-                                        commonly refers to moving tools and data from old, legacy infrastructure or an
-                                        on-premises* data center to the cloud
+                                        We develop world class web and mobile apps across various platforms and Hybrid applications to meet your business requirements.
                                     </p>
                                 </div>
                                 <!-- <div class="serial-number">
@@ -409,25 +452,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 sm-mb-20">
-                        <div class="services-item paste-bg">
-                            <div class="services-icon">
+                    <div class="col-lg-4 col-md-6 sm-mb-20" >
+                        <div class="services-item paste-bg" id="service-detail">
+                            <div class="services-icon row">
                                 <div class="image-part">
                                     <!-- <i class="fa fa-pie-chart" aria-hidden="true"></i> -->
                                     <img class="main-img" src="assets/images/services/style3/main-img/8.png" alt="">
                                     <img class="hover-img" src="assets/images/services/style3/hover-img/8.png" alt="">
                                 </div>
+                                <div class="services-content services-text">
+                                    <h5 class="title-service"><a >Product Development</a></h5>
+                                </div>
                             </div>
                             <div class="services-content">
-                                <div class="services-text">
-                                    <h4 class="title"><a href="cloud-and-devops.html">Product Development</a></h4>
-                                </div>
                                 <div class="services-desc">
                                     <p>
-                                        Cloud migration is the process of moving digital assets — like data, workloads,
-                                        IT resources, or applications — to cloud infrastructure. Cloud migration
-                                        commonly refers to moving tools and data from old, legacy infrastructure or an
-                                        on-premises* data center to the cloud
+                                        Our team of experts works with you to understand, analyze, design, build, evolve compelling and highly reliable product using Yozy agile delivery tool.
                                     </p>
                                 </div>
                                 <!-- <div class="serial-number">
@@ -435,24 +475,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 sm-mb-20">
-                        <div class="services-item purple-bg">
-                            <div class="services-icon">
+                    <div class="col-lg-4 col-md-6 sm-mb-20" >
+                        <div class="services-item purple-bg" id="service-detail">
+                            <div class="services-icon row">
                                 <div class="image-part">
                                     <img class="main-img" src="assets/images/services/style3/main-img/10.png" alt="">
                                     <img class="hover-img" src="assets/images/services/style3/hover-img/10.png" alt="">
                                 </div>
+                                <div class="services-content services-text">
+                                    <h5 class="title-service"><a >Cloud Migration</a></h5>
+                                </div>
                             </div>
                             <div class="services-content">
-                                <div class="services-text">
-                                    <h4 class="title"><a href="product-design.html">Cloud Migration</a></h4>
-                                </div>
                                 <div class="services-desc">
                                     <p>
-                                        Cloud migration is the process of moving digital assets — like data, workloads,
-                                        IT resources, or applications — to cloud infrastructure. Cloud migration
-                                        commonly refers to moving tools and data from old, legacy infrastructure or an
-                                        on-premises* data center to the cloud
+                                        Cloud migration is the next step of achieving digital transformation, leveraging data to cloud servers. We identify opportunities and recommend the optimal migration strategy.
                                     </p>
                                 </div>
                                 <!-- <div class="serial-number">
@@ -460,24 +497,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="services-item green-bg">
-                            <div class="services-icon">
+                    <div class="col-lg-4 col-md-6 mb-20" >
+                        <div class="services-item green-bg" id="service-detail">
+                            <div class="services-icon row">
                                 <div class="image-part">
                                     <img class="main-img" src="assets/images/services/style2/main-img/6.png" alt="">
                                     <img class="hover-img" src="assets/images/services/style2/hover-img/6.png" alt="">
                                 </div>
+                                <div class="services-content services-text">
+                                    <h5 class="title-service"><a >Microservices</a></h5>
+                                </div>
                             </div>
                             <div class="services-content">
-                                <div class="services-text">
-                                    <h4 class="title"><a href="web-development.html">Microservices</a></h4>
-                                </div>
                                 <div class="services-desc">
                                     <p>
-                                        Microservices are increasingly used in the development world as developers work
-                                        to create larger, more complex applications that are better developed and
-                                        managed as a combination of smaller services that work cohesively together for
-                                        more extensive, application-wide functionality
+                                        We transform monolithic systems to micro services which focuses on single function modules with well-defined interfaces and operations.
                                     </p>
                                 </div>
                                 <!-- <div class="serial-number">
@@ -485,24 +519,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="services-item indigo-bg">
-                            <div class="services-icon">
+                    <div class="col-lg-4 col-md-6 mb-20" >
+                        <div class="services-item indigo-bg" id="service-detail">
+                            <div class="services-icon row">
                                 <div class="image-part">
                                     <img class="main-img" src="assets/images/services/style6/2.png" alt="">
                                     <img class="hover-img" src="assets/images/services/style6/2.png" alt="">
                                 </div>
+                                <div class="services-content services-text">
+                                    <h5 class="title-service"><a >Cloud Native</a></h5>
+                                </div>
                             </div>
                             <div class="services-content">
-                                <div class="services-text">
-                                    <h4 class="title"><a href="web-development.html">Cloud Native</a></h4>
-                                </div>
                                 <div class="services-desc">
                                     <p>
-                                        Cloud native is a lot more than just signing up with a cloud provider and using
-                                        it to run your existing applications. It affects the design, implementation,
-                                        deployment, and operation of your application.Cloud migration commonly refers to
-                                        moving tools and data from old, legacy infrastructure
+                                        Cloud-native is a modern approach to building and running software applications that exploits the flexibility, scalability, and resilience of cloud computing.
                                     </p>
                                 </div>
                                 <!-- <div class="serial-number">
@@ -510,24 +541,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="services-item pink-bg">
-                            <div class="services-icon">
+                    <div class="col-lg-4 col-md-6 mb-20" >
+                        <div class="services-item pink-bg" id="service-detail">
+                            <div class="services-icon row">
                                 <div class="image-part">
                                     <img class="main-img" src="assets/images/technology/style3/2.png" alt="">
                                     <img class="hover-img" src="assets/images/technology/style3/2.png" alt="">
                                 </div>
+                                <div class="services-content services-text">
+                                    <h5 class="title-service"><a >E Commerce</a></h5>
+                                </div>
                             </div>
                             <div class="services-content">
-                                <div class="services-text">
-                                    <h3 class="title"><a href="web-development.html">E Commerce</a></h3>
-                                </div>
                                 <div class="services-desc">
-                                    <p>E-Commerce, also known as electronic commerce or internet commerce, refers to the
-                                        buying and selling of goods or services using the internet, and the transfer of
-                                        money and data to execute these transactions. Ecommerce is often used to refer
-                                        to the sale of physical products onlineAt vero eos et accusamus etiusto odio
-                                        praesentium accusamus etiusto odio data center for managing database.
+                                    <p>We offer complete portfolio of professional ecommerce services of any Brand, Retail, B2B & Complex business requirements encompassing management, merchandising and integration tools.  
                                     </p>
                                 </div>
                                 <!-- <div class="serial-number">
@@ -535,25 +562,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="services-item aqua-bg">
-                            <div class="services-icon">
+                    <div class="col-lg-4 col-md-6 mb-20" >
+                        <div class="services-item aqua-bg" id="service-detail">
+                            <div class="services-icon row">
                                 <div class="image-part">
                                     <img class="main-img" src="assets/images/services/main-home/icons/6.png" alt="">
                                     <img class="hover-img" src="assets/images/services/main-home/icons/6.png" alt="">
                                 </div>
+                                <div class="services-content services-text">
+                                    <h5 class="title-service"><a >Big Data</a></h5>
+                                </div>
                             </div>
                             <div class="services-content">
-                                <div class="services-text">
-                                    <h4 class="title"><a href="web-development.html">Big Data</a></h4>
-                                </div>
                                 <div class="services-desc">
                                     <p>
-                                        Big Data is a collection of data that is huge in volume, yet growing
-                                        exponentially with time. It is a data with so large size and complexity that
-                                        none of traditional data management tools can store it or process it
-                                        efficiently. Big data is also a data but with huge size. It is a data with so
-                                        large size and complexity
+                                        We help organization to turn huge amount of big data into real-time insight with distributed data storage and advanced computation capabilities.
                                     </p>
                                 </div>
                                 <!-- <div class="serial-number">
@@ -566,26 +589,33 @@
         </div>
         <!-- Services Section End -->
 
-        <!-- Testimonial Section Start -->
-        <div id="products" class="rs-testimonial style7 bgProject  pt-100 pb-80 md-pt-75">
+        <!-- Products Section Start -->
+        <div id="products" class="rs-testimonial style7 bgProject  pt-110 pb-0 md-pt-40 md-pb-0">
             <div class="container">
                 <div class="sec-title2 text-center mb-20">
                     <!-- <span class="sub-text gold-color">Client Reviews</span> -->
-                    <h2 class="title title7  ">
+                    <h2 class="title">
                         Our Recent Launched Products
                     </h2>
+                    <div class="heading-line">
+
+                    </div>
                 </div>
                 <div class="testi-main">
                     <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false">
                         <div class="testi-item">
                             <div class="testi-content">
-                                <div class="images-wrap">
-                                    <img src="assets/images/Devozy1.png" alt="Images">
+                                <div class="images-wrap" id="image-wrap">
+                                    <a>
+                                    <img src="assets/images/Devozy1.png">
+                                    </a>
+                                    <!-- <h6>Hover image to see the detailed view</h6> -->
+                                    <!-- <img class="hover-image" src="assets/images/Devozy1.png" alt="Images"> -->
                                 </div>
-                                <div class="testi-information">
-                                    <div class="testi-name  ">DEVOZY</div>
+                                <div class="project-name-image-hover">
+                                    <div class="project-name  ">DEVOZY</div>
                                     <!-- <span class="testi-title">Graphic Designer</span> -->
-                                    <span class="testi-title">YOZY DevOps Platform helps to improve release
+                                    <span >YOZY DevOps Platform helps to improve release
                                         cycle time and development efficiency. DevOps is one of the most important
                                         practices to emerge in the Service and Product development. Our YOZY DevOps
                                         Platform to bootstrap & accelerate your application deployments with
@@ -594,16 +624,18 @@
                                         ElasticSearch, public cloud & cloud native services to support your
                                         application deployments.</span>
 
-                                </div>
+                                </div>              
                             </div>
                         </div>
                         <div class="testi-item">
                             <div class="testi-content">
-                                <div class="images-wrap">
-                                    <img src="assets/images/yes12.png" alt="Images">
+                                
+                                <div class="images-wrap" id="image-wrap">
+                                    <a><img src="assets/images/yes12.png"></a>
+                                    <!-- <img class="hover-image" src="assets/images/yes12.png" alt="Images"> -->
                                 </div>
-                                <div class="testi-information">
-                                    <div class="testi-name  ">YES</div>
+                                <div class="project-name-image-hover">
+                                    <div class="project-name ">YES</div>
                                     <!-- <span class="testi-title">Design Lead</span> -->
                                     <span class="testi-title">Our Yozy Enterprise Suite (YES) is an Enterprise
                                         application to automate end-to-end process from Lead generation, customer
@@ -615,15 +647,16 @@
                                         build One-Enterprise-One-Platform (OEOP)</span>
 
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="testi-item">
                             <div class="testi-content">
-                                <div class="images-wrap">
-                                    <img src="assets/images/CloudMig.png" alt="Images">
+                                <div class="images-wrap" id="image-wrap">
+                                    <a><img src="assets/images/CloudMig.png"></a>
                                 </div>
-                                <div class="testi-information">
-                                    <div class="testi-name  ">Cloud Migration</div>
+                                <div class="project-name-image-hover">
+                                    <div class="project-name ">Cloud Migration</div>
                                     <!-- <span class="testi-title">Marketer</span> -->
                                     <span class="testi-title">Cloud migration is the process of moving applications
                                         and data from one location, often a company's private, on-site ("on-premises")
@@ -636,11 +669,11 @@
                         </div>
                         <div class="testi-item">
                             <div class="testi-content">
-                                <div class="images-wrap">
-                                    <img src="assets/images/PST screenshot.jpeg" alt="Images">
+                                <div class="images-wrap" id="image-wrap">
+                                    <a><img src="assets/images/PST screenshot.jpeg"></a>
                                 </div>
-                                <div class="testi-information">
-                                    <div class="testi-name  ">Pre Sales Tracker</div>
+                                <div class="project-name-image-hover">
+                                    <div class="project-name  ">Pre Sales Tracker</div>
                                     <!-- <span class="testi-title">Web Developer</span> -->
                                     <span class="testi-title">Task management is the process of managing a task
                                         through its life cycle. It involves planning, testing, tracking, and reporting.
@@ -655,192 +688,34 @@
                 </div>
             </div>
         </div>
-        <!-- Testimonial Section End -->
+        <!-- Products Section End -->
 
-        <!-- Project Section Start -->
-        <!-- <div class="rs-project style3 pt-120 pb-120 md-pt-80 md-pb-80">
+        <!-- Technologies Section Start -->
+        <div id="technologies" class="rs-project style8 pt-110 pb-0 md-pt-40 md-pb-0">
             <div class="container">
-                 <div class="sec-title2 text-center mb-45">
-                        <-- <span class="sub-text white-color">
-                            Projects</span> -->
-        <!-- <h2 class="title title2 white-color">
-                           Our Recent Launched Projects
-                        </h2>
-                    </div>
-                <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="true" data-md-device-dots="false">
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="#"><img src="assets/images/project/main-home/1.jpg" alt="images"></a>
-                        </div>
-                        <div class="project-content">
-                            <div class="portfolio-inner">
-                                <h3 class="title"><a href="case-studies-single.html">Product Design</a></h3>
-                                <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="#"><img src="assets/images/project/main-home/2.jpg" alt="images"></a>
-                        </div>
-                        <div class="project-content">
-                            <div class="portfolio-inner">
-                                <h3 class="title"><a href="case-studies-single.html">Product Design</a></h3>
-                                <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="#"><img src="assets/images/project/main-home/3.jpg" alt="images"></a>
-                        </div>
-                        <div class="project-content">
-                            <div class="portfolio-inner">
-                                <h3 class="title"><a href="case-studies-single.html">Product Design</a></h3>
-                                <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="#"><img src="assets/images/project/main-home/4.jpg" alt="images"></a>
-                        </div>
-                        <div class="project-content">
-                            <div class="portfolio-inner">
-                                <h3 class="title"><a href="case-studies-single.html">Product Design</a></h3>
-                                <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="#"><img src="assets/images/project/main-home/5.jpg" alt="images"></a>
-                        </div>
-                        <div class="project-content">
-                            <div class="portfolio-inner">
-                                <h3 class="title"><a href="case-studies-single.html">Product Design</a></h3>
-                                <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="#"><img src="assets/images/project/main-home/6.jpg" alt="images"></a>
-                        </div>
-                        <div class="project-content">
-                            <div class="portfolio-inner">
-                                <h3 class="title"><a href="case-studies-single.html">Product Design</a></h3>
-                                <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  -->
-        <!-- Project Section End -->
-
-
-        <!-- <div class="rs-project style3 pt-120 pb-120 md-pt-75 md-pb-80">
-                <div class="container">
-                    <div class="sec-title2 text-center mb-45">
-                         <span class="sub-text white-color">
-                            Projects</span> -->
-        <!-- <h2 class="title title2 white-color">
-                           Our Recent Launched Projects
-                        </h2>
-                    </div>
-                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="3" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="4" data-md-device-nav="true" data-md-device-dots="false">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="assets/images/project/main-home/1.jpg" alt="images">
-                            </div>
-                            <div class="project-content"> 
-                                <div class="project-inner">
-                                    <h3 class="title"><a href="case-studies-single.html">Product Engineering</a></h3>
-                                    <span class="category"><a href="case-studies-single.html">It Technology</a></span>
-                                    <div class="p-icon"><a href="case-studies-single.html"><i class="fa fa-angle-right"></i></a></div>
-                                </div>
-                            </div>
-                            <-- <div class="project-img">
-                                <a href="case-studies-single.html"><img src="assets/images/project/main-home/1.jpg" alt="images"></a>
-                            </div>
-                            <div class="project-content">
-                                <div class="portfolio-inner">
-                                    <h3 class="title"><a href="case-studies-single.html">Product Design</a></h3>
-                                    <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                                </div>
-                            </div> -->
-        <!-- </div> -->
-        <!-- <div class="project-item">
-                            <div class="project-img">
-                                <a href="case-studies-single.html"><img src="assets/images/project/main-home/2.jpg" alt="images"></a>
-                            </div>
-                            <div class="project-content">
-                                <div class="portfolio-inner">
-                                    <h3 class="title"><a href="case-studies-single.html">Growth Strategies</a></h3>
-                                    <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <div class="project-img">
-                                <a href="case-studies-single.html"><img src="assets/images/project/main-home/3.jpg" alt="images"></a>
-                            </div>
-                            <div class="project-content">
-                                <div class="portfolio-inner">
-                                    <h3 class="title"><a href="case-studies-single.html">latform Integration</a></h3>
-                                    <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                                </div>
-                            </div>
-                        </div> -->
-        <!-- <div class="project-item">
-                            <div class="project-img">
-                                <a href="case-studies-single.html"><img src="assets/images/project/main-home/4.jpg" alt="images"></a>
-                            </div>
-                            <div class="project-content">
-                                <div class="portfolio-inner">
-                                    <h3 class="title"><a href="case-studies-single.html">Innovative Interfaces</a></h3>
-                                    <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <div class="project-img">
-                                <a href="case-studies-single.html"><img src="assets/images/project/main-home/5.jpg" alt="images"></a>
-                            </div>
-                            <div class="project-content">
-                                <div class="portfolio-inner">
-                                    <h3 class="title"><a href="case-studies-single.html">Product Engineering</a></h3>
-                                    <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                                </div>
-                            </div>
-                        </div> -->
-        <!-- <div class="project-item">
-                            <div class="project-img">
-                                <a href="case-studies-single.html"><img src="assets/images/project/main-home/6.jpg" alt="images"></a>
-                            </div>
-                            <div class="project-content">
-                                <div class="portfolio-inner">
-                                    <h3 class="title"><a href="case-studies-single.html">Analytic Solutions</a></h3>
-                                    <span class="category"><a href="case-studies-single.html">IT Technology</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>   -->
-        <!-- Project Section End -->
-
-        <!--Technology Section Start-->
-        <div id="technologies" class="rs-technology style2 bgProject pt-110 pb-115 md-pt-75 md-pb-80">
-            <div class="container">
-                <div class="sec-title2 text-center mb-45">
-                    <h2 class="title title2">
+                <div class="sec-title2 text-center mb-20">
+                    <!-- <span class="sub-text gold-color">Client Reviews</span> -->
+                    <h2 class="title">
                         What Technology We Are Using For Our Valued Customers
                     </h2>
+                    <div class="heading-line">
+
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
+                <!-- <ul id="tabs-nav">
+                    <li><a class="active" href="javascript:front()">Frontend <br> Technologies</a></li>
+                    <li><a href="javascript:backend()">Backend <br> Technologies</a></li>
+                    <li><a href="javascript:database()"> Database <br> Technologies</a></li>
+                    <li><a href="javascript:server()"> Server <br> Technologies</a></li>
+                  </ul> -->
+                <div class="gridFilter text-center mb-50">
+                    <button class="active" onclick="front()">FrontEnd Technologies</button>
+                    <button onclick="backend()">Backend Technologies</button>
+                    <button onclick="database()">Database Technologies</button>
+                    <button onclick="server()">Server Technologies</button>
+                </div>
+                <div class=" rs-technology contentalign-fs style2 contentaligns row" id="myFrontend">
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
                         <div class="technology-wrap">
                             <div class="rs-grid-figure">
                                 <div class="logo-img">
@@ -853,7 +728,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
                         <div class="technology-wrap">
                             <div class="rs-grid-figure">
                                 <div class="logo-img">
@@ -864,20 +739,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
-                        <div class="technology-wrap">
-                            <div class="rs-grid-figure">
-                                <div class="logo-img">
-                                    <a href="#">
-                                        <img class="focus-img"
-                                            src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Python_logo_and_wordmark.svg"
-                                            alt="grid-image">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
+                    
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
                         <div class="technology-wrap">
                             <div class="rs-grid-figure">
                                 <div class="logo-img">
@@ -890,7 +753,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
+<div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img" src="assets/images/bootstrap.png" alt="grid-image">
+                                        <!-- <img class="main-img" src="assets/images/technology/style4/main-img/4.png" alt="grid-image">  -->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs-technology contentalign-fs hideTech style2 row" id="myBackend">
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
                         <div class="technology-wrap">
                             <div class="rs-grid-figure">
                                 <div class="logo-img">
@@ -904,7 +781,46 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 md-pb-30">
+<div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30 pt-10">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Python_logo_and_wordmark.svg"
+                                            alt="grid-image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img"
+                                            src="assets/images/java.jpg"
+                                            alt="grid-image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 md-pb-30">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img" src="assets/images/springboot.png" alt="grid-image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs-technology contentalign hideTech style2 row" id="myDatabase">
+                    <div class="col-lg-3 col-md-4 col-sm-6 md-pb-30 pt-15">
                         <div class="technology-wrap">
                             <div class="rs-grid-figure">
                                 <div class="logo-img">
@@ -915,87 +831,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
-                        <div class="technology-wrap">
-                            <div class="rs-grid-figure">
-                                <div class="logo-img">
-                                    <a href="#">
-                                        <img class="focus-img"
-                                            src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Sonarqube-48x200.png"
-                                            alt="hover-image">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
-                        <div class="technology-wrap">
-                            <div class="rs-grid-figure">
-                                <div class="logo-img">
-                                    <a href="#">
-                                        <img class="focus-img"
-                                            src="https://upload.wikimedia.org/wikipedia/commons/6/67/Kubernetes_logo.svg"
-                                            alt="grid-image">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
-                        <div class="technology-wrap">
-                            <div class="rs-grid-figure">
-                                <div class="logo-img">
-                                    <a href="#">
-                                        <img class="focus-img"
-                                            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg"
-                                            alt="grid-image">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
-                        <div class="technology-wrap">
-                            <div class="rs-grid-figure">
-                                <div class="logo-img">
-                                    <a href="#">
-                                        <img class="focus-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Bitbucket_Logo.png" alt="grid-image">
-                                        <!-- <img class="main-img" src="assets/images/technology/style4/main-img/4.png" alt="grid-image">  -->
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
-                        <div class="technology-wrap">
-                            <div class="rs-grid-figure">
-                                <div class="logo-img">
-                                    <a href="#">
-                                        <img class="focus-img"
-                                            src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Nginx.png"
-                                            alt="grid-image">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
-                        <div class="technology-wrap">
-                            <div class="rs-grid-figure">
-                                <div class="logo-img">
-                                    <a href="#">
-                                        <img class="focus-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Maven_logo.gif"
-                                            alt="grid-image">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
                         <div class="technology-wrap">
                             <div class="rs-grid-figure">
                                 <div class="logo-img">
@@ -1008,13 +844,116 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
+                    
+                </div>
+                <div class="rs-technology contentalign-fs hideTech style2 row" id="myServer">
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
                         <div class="technology-wrap">
                             <div class="rs-grid-figure">
                                 <div class="logo-img">
                                     <a href="#">
-                                        <img class="focus-img" src="assets/images/bootstrap.png" alt="grid-image">
+                                        <img class="focus-img"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Sonarqube-48x200.png"
+                                            alt="hover-image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/6/67/Kubernetes_logo.svg"
+                                            alt="grid-image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg"
+                                            alt="grid-image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Bitbucket_Logo.png" alt="grid-image">
                                         <!-- <img class="main-img" src="assets/images/technology/style4/main-img/4.png" alt="grid-image">  -->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Nginx.png"
+                                            alt="grid-image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Maven_logo.gif"
+                                            alt="grid-image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 sm-pb-30">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img" src="assets/images/Tech-Logo/elasticsearch.png"
+                                            alt="grid-image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 md-pb-30">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Apache_HTTP_server_logo_%282019-present%29.svg" alt="grid-image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
+                        <div class="technology-wrap">
+                            <div class="rs-grid-figure">
+                                <div class="logo-img">
+                                    <a href="#">
+                                        <img class="focus-img"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/e/eb/MongoDB_Logo.png"
+                                            alt="hover-image">
                                     </a>
                                 </div>
                             </div>
@@ -1053,31 +992,15 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 sm-pb-30">
-                        <div class="technology-wrap">
-                            <div class="rs-grid-figure">
-                                <div class="logo-img">
-                                    <a href="#">
-                                        <img class="focus-img"
-                                            src="assets/images/java.jpg"
-                                            alt="grid-image">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-    <!-- Technology Section End-->
+        <!-- Technologies Section End -->
 
 
     <!-- Testimonial Section Start -->
-    <div id="testimonials" class="rs-testimonial bgProject pt-110 pb-115 md-pt-75 md-pb-80">
+    <div id="testimonials" class="rs-testimonial bgProject pt-110 pb-0 md-pt-40 md-pb-0">
         <div class="container">
             <div class="testi-effects-layer bg10">
                 <div class="row align-items-center">
@@ -1085,7 +1008,7 @@
                         <div class="sec-title mb-60">
                             <div class="sub-text new  ">Client's Review</div>
                             <h2 class="title title4 white-color   pb-20">
-                                What do people praise about Yozy Tech?
+                                What do people praise about <br/> Yozy Tech?
                             </h2>
                         </div>
                     </div>
@@ -1151,8 +1074,8 @@
 
 
 
-    <!-- Contact Section Start -->
-    <div id="contact" class="rs-contact bgProject pt-110 pb-115 md-pt-75 md-pb-80">
+    <!-- GetIn Touch Section Start -->
+    <div id="contact" class="rs-contact bgProject pt-110 pb-0 md-pt-40 md-pb-0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 md-mb-60">
@@ -1191,7 +1114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 pl-70 md-pl-15">
+                <div class="col-lg-8 pl-70 md-pl-15 bgGetInTouch">
                     <div class="contact-widget">
                         <div class="sec-title2 mb-40">
                             <h2 class="title testi-title  ">Get In Touch</h2>
@@ -1238,8 +1161,10 @@
         <!-- <div class="map-canvas pt-120 md-pt-80"><iframe src="https://maps.google.com/maps?q=rstheme&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
             </div>  -->
     </div>
+    <!-- GetIn Touch Section End-->
+
     <!-- Contact Section Start -->
-    <footer id="rs-footer" class="rs-footer style3 onepage-style4 mt-90">
+    <footer id="rs-footer" class="rs-footer style3 onepage-style4 mt-110">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -1365,6 +1290,18 @@
     <!-- <div id="scrollUp" class="orange-color">
             <i class="fa fa-angle-up"></i>
         </div> -->
+    <!-- End scrollUp  -->
+
+    <!-- start scrollUp  -->
+    <div id="scrollUp" class="purple-color">
+        <div class="btn_wrap">
+            <span class="span1"><i class="fa fa-phone"></i></span>
+            <div class="container1">
+                <a href="https://wa.me/919894039246" target="_blank" class="text-white">ContactUs</a>
+                <a href="https://wa.me/919894039246" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
     <!-- End scrollUp  -->
 
     <!-- Search Modal Start -->
