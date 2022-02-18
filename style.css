@@ -410,6 +410,39 @@ ul {
   padding: 100px 60px 810px 50px;
   border-radius: 10px 10px 10px 10px;
 }
+@media screen and (max-width: 601px) {
+  .bg9 {
+    background: url(assets/images/bg/work-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 100px 60px 100px 50px;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+@media screen and (min-width: 701px) {
+  .bg9 {
+    background: url(assets/images/bg/work-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 100px 60px 100px 50px;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bg9 {
+    background: url(assets/images/bg/work-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 100px 60px 840px 50px;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+@media screen and (max-width: 601px) {
+
+}
 .bg10 {
   background-image: linear-gradient(
     250deg
@@ -1044,6 +1077,7 @@ blockquote cite:before {
   font-size: 22px;
 }
 .text-g{
+  font-size: 45px;
   color: #4e95ed;
 }
 .rs-carousel.nav-style2 .owl-nav .owl-prev:hover i,
@@ -3860,8 +3894,8 @@ body .search-modal .close:hover {
 }
 .color-navy{
   /* color: #000080; */
-  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-  /* background:linear-gradient(250deg, #1273eb 30%, #03228f 100%); */
+  
+  background:linear-gradient(250deg, #1273eb 30%, #03228f 100%);
   -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -3942,7 +3976,7 @@ body .search-modal .close:hover {
 .rs-banner.style3.modify2 {
   background: unset;
   border-radius: unset;
-  padding: 130px 0px 100px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .rs-banner.style3.modify2 .banner-content .title {
   color: #101010;
@@ -6364,6 +6398,7 @@ body .search-modal .close:hover {
 }
 .rs-services.style3 .services-item .services-content {
   padding: 33px 0px 0px 0;
+  /* height: 10; */
   position: relative;
 }
 .rs-services.style3 .services-item .services-content .services-text .title {
@@ -6383,7 +6418,7 @@ body .search-modal .close:hover {
   font-family:'Nanum Gothic', sans-serif;
 }
 .rs-services.style3 .services-item .services-content .services-desc p {
-  margin: 0;
+  margin: 0px;
   font-family:'Nanum Gothic', sans-serif;
 }
 #service-detail:hover .title-service{
