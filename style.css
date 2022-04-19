@@ -54,6 +54,17 @@
 
 --------------------------------------------------------*/
 /* P  */
+
+.rs-menu ul ul {
+
+  background-color: #f7f7f9 !important;
+}
+.ml-5m{
+  margin-left: 50px;
+}
+.ml-10m{
+  margin-left: 78px;
+}
 .nanum{
   font-family:'Nanum Gothic', sans-serif;
   font-weight: 500;
@@ -436,7 +447,7 @@ ul {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    padding: 100px 60px 840px 50px;
+    padding: 100px 60px 480px 50px;
     border-radius: 10px 10px 10px 10px;
   }
 }
@@ -11440,3 +11451,5 @@ body .search-modal .close:hover {
     transform: none;
   }
 }
+
+

@@ -2,7 +2,8 @@
 <html lang="zxx">
 
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
@@ -57,7 +58,39 @@
             s.style.display = "none";
             d.style.display = "flex";
         }
+        document.addEventListener("DOMContentLoaded", function () {
+            // make it as accordion for smaller screens
+            if (window.innerWidth > 992) {
 
+                document.querySelectorAll('.navbar .nav-item').forEach(function (everyitem) {
+
+                    everyitem.addEventListener('mouseover', function (e) {
+
+                        let el_link = this.querySelector('a[data-bs-toggle]');
+
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.add('show');
+                            nextEl.classList.add('show');
+                        }
+
+                    });
+                    everyitem.addEventListener('mouseleave', function (e) {
+                        let el_link = this.querySelector('a[data-bs-toggle]');
+
+                        if (el_link != null) {
+                            let nextEl = el_link.nextElementSibling;
+                            el_link.classList.remove('show');
+                            nextEl.classList.remove('show');
+                        }
+
+
+                    })
+                });
+
+            }
+            // end if innerWidth
+        });
     </script>
 
     <!--End of Tawk.to Script-->
@@ -193,28 +226,7 @@
 
                         <a href="https://www.instagram.com/yozytechnologies/" target="_blank"><span><i
                                     class="fa fa-instagram"></i></span></a>
-                        <a href="" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
-                                viewBox="0 0 64 64" style=" fill:#000000;">
-                                <linearGradient id="gPWjxlu7lDdzZroFFR7GZa_79041_gr1" x1="32" x2="32" y1="9.083"
-                                    y2="54.676" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
-                                    <stop offset="0" stop-color="#1a6dff"></stop>
-                                    <stop offset="1" stop-color="#c822ff"></stop>
-                                </linearGradient>
-                                <path fill="url(#gPWjxlu7lDdzZroFFR7GZa_79041_gr1)"
-                                    d="M50,55H14c-2.757,0-5-2.243-5-5V14c0-2.757,2.243-5,5-5h36c2.757,0,5,2.243,5,5v36 C55,52.757,52.757,55,50,55z M14,11c-1.654,0-3,1.346-3,3v36c0,1.654,1.346,3,3,3h36c1.654,0,3-1.346,3-3V14c0-1.654-1.346-3-3-3H14 z">
-                                </path>
-                                <linearGradient id="gPWjxlu7lDdzZroFFR7GZb_79041_gr2" x1="32" x2="32" y1="19" y2="45"
-                                    gradientUnits="userSpaceOnUse" spreadMethod="reflect">
-                                    <stop offset="0" stop-color="#6dc7ff"></stop>
-                                    <stop offset="1" stop-color="#e6abff"></stop>
-                                </linearGradient>
-                                <path fill="url(#gPWjxlu7lDdzZroFFR7GZb_79041_gr2)"
-                                    d="M43,29h-1c-1.11,0-2-0.9-2-2c0-4.4-3.6-8-8-8h-5c-4.4,0-8,3.6-8,8v10c0,4.4,3.6,8,8,8h10 c4.4,0,8-3.6,8-8v-6C45,29.9,44.1,29,43,29z M27,25h5c1.1,0,2,0.9,2,2c0,1.1-0.9,2-2,2h-5c-1.1,0-2-0.9-2-2C25,25.9,25.9,25,27,25z M37,39H27c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2h10c1.1,0,2,0.9,2,2C39,38.1,38.1,39,37,39z">
-                                </path>
-                            </svg>
 
-                        </a>
                     </div>
                 </div>
 
@@ -227,9 +239,36 @@
                                 <div class="logo-part">
 
                                     <a href="index.html"><img src="assets/images/logo.png" alt="logo" width="100px"></a>
+
                                 </div>
                             </div>
-                            <div class="col-lg-10 text-right">
+
+                            <div class="col-lg-3 ">
+                                <nav class="rs-menu ">
+                                    <ul class="nav-menu">
+
+                                        <li class="menu-item-has-children">
+                                            <a class="text-primary">Our Product +</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="https://devozy.yozytech.com/" target="_blank">Devozy</a>
+                                                </li>
+                                               
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item-has-children">
+                                            <a class="text-primary">Blog +</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blogindex.html" target="_blank">YES - Blog</a> </li>
+                                                <!-- <li><a href="blog-details.html">Blog Details</a></li> -->
+                                            </ul>
+                                        </li>
+
+                                    </ul> <!-- //.nav-menu -->
+                                </nav>
+                            </div>
+                            <div class="col-lg-7 text-right d-flex justify-content-end">
+
                                 <ul class="rs-contact-info">
                                     <!-- <li class="contact-part">
                                             <i class="flaticon-location"></i>
@@ -269,14 +308,7 @@
 
                                         <a href="https://www.instagram.com/yozytechnologies/" target="_blank"><span><i
                                                     class="fa fa-instagram"></i></span></a>
-                                        <a href="blogindex.html" target="_blank">
-                                            <span>
-                                               <!-- <i> Blog</i> -->
-                                               <i class="fas fa-blog"></i>
-                                               
-                                            </span>
 
-                                        </a>
                                     </li>
 
                             </div>
@@ -471,12 +503,22 @@
 </div> -->
 
     <div id="services" class="rs-services style3 bgProject">
-        <div class="container d-flex justify-content-center">
-            <iframe width="760" height="415"
-                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLVJI6YLg_QhRmk4hkBmI-v21H4NuUgC4b"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <div class="row">
+            <div class="col-6">
+                <iframe width="520" height="305" class="mt-2 ml-10m"
+                    src="https://www.youtube-nocookie.com/embed/videoseries?list=PLVJI6YLg_QhRmk4hkBmI-v21H4NuUgC4b"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="col-6  ">
+                <iframe width="520" height="305" class="mt-2"
+                    src="https://www.youtube-nocookie.com/embed/videoseries?list=PLVJI6YLg_QhROEO5hll9RbuaGgEBZlZn1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 
@@ -491,9 +533,15 @@
                             <h2 class="title title4 white-color pb-20">
                                 Who We Are
                             </h2>
-                            <div class="desc white-color">
-                                We specialize in creative, sustainable technology driven solutions, services and
-                                products
+                            <div class="desc white-color text-justify">
+                                An IT Service provider aiming to serve Professional, Friendly and Quality services to
+                                our customers and transform their Business using niche digital Cloud & DevOps Solutions.
+                                Advancing the power of technology and automation with our products YozY DevOps
+                                Accelerator Platform <a href="https://devozy.yozytech.com/" target="_blank"
+                                    style="color: aliceblue;">(DEVOZY)</a> | YozY Enterprise Suite (YES) | YozY Cloud
+                                brokerage and Workload migration platform (CLOUZY).
+                                Transforming the delivery of IT services through our partnership with Redhat |
+                                SalesForce | Google Cloud.
                             </div>
                             <!-- <div class="btn-part mt-40">
                     <a class="readon discover started" href="contact.html">Learn More</a>
@@ -503,7 +551,7 @@
                 </div>
                 <div class="col-lg-8 pl-35 md-pt-40 md-pl-15">
                     <div class="row">
-                        <div class="col-md-6 mb-30">
+                        <div class="col-md-6 mt-2">
                             <div class="rs-addon-number">
                                 <div class="number-text">
                                     <div class="number-area">
@@ -514,13 +562,14 @@
                                         <h3 class="title">Friendly Cost Effective</h3>
                                     </div>
 
-                                    <p class="number-txt text-justify">Working Down To Earth and friendly to
-                                        partners/Customers, also we ensure we charge optimally compare to other
+                                    <p class="number-txt text-justify">working down to earth and friendly to
+                                        Partners/Customers, also we ensure we charge optimally compare to other
                                         companies and also providing enterprise level services.</p>
+                                    <br><br>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-1">
+                        <div class="col-md-6">
                             <div class="rs-addon-number">
                                 <div class="number-text">
                                     <div class="number-area">
@@ -530,10 +579,11 @@
                                     <div class="number-title">
                                         <h3 class="title">Our Vision & Our Mission</h3>
                                     </div>
-                                    <p class="number-txt text-justify">Technology fit for purpose,quality service
-                                        and support. understand emerging technologies such as Cloud Migratin,
-                                        Devops, Cyber security and Niche Technologies.</p>
-                                    <br>
+                                    <p class="number-txt text-justify">Our vision & Our mission
+                                        Technology fit for purpose, quality, cost effective, service and support.
+                                        understand emerging technologies such as Cloud platform, Devops tools, Cyber
+                                        security and developing products using Niche Technologies.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -547,13 +597,13 @@
                                     <div class="number-title">
                                         <h3 class="title">we are Reliable</h3>
                                     </div>
-                                    <p class="number-txt text-justify"> We understand the need for Optimization of
-                                        every IT investment, So we develop solutions with our customers, which
-                                        minimizes disruptions and maximizes resources.</p>
+                                    <p class="number-txt text-justify"> We understand the need of the customer and build
+                                        reliable solution which can be optimized and scaled according to the needs and
+                                        also it is secure.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-1">
+                        <div class="col-md-6">
                             <div class="rs-addon-number">
                                 <div class="number-text">
                                     <div class="number-area">
@@ -563,9 +613,10 @@
                                     <div class="number-title">
                                         <h3 class="title"> Partnerships</h3>
                                     </div>
-                                    <p class="number-txt text-justify">we partner with leading digital companies
-                                        such as SalesForce, RedHat, Google Cloud.<br><br><br></p>
-                                    <br>
+                                    <p class="number-txt text-justify">we partner with leading digital companies such as
+                                        SalesForce, RedHat, Google Cloud and leverage their top notch products to our
+                                        global clients.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -585,7 +636,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-1">
+                        <div class="col-md-6">
                             <div class="rs-addon-number">
                                 <div class="number-text">
                                     <div class="number-area">
@@ -595,8 +646,8 @@
                                     <div class="number-title">
                                         <h3 class="title">Client Ethics </h3>
                                     </div>
-                                    <p class="number-txt text-justify"> We believe, Being Transparent & Prioritizing
-                                        Client’s Needs builds a strong relationship.</p><br>
+                                    <p class="number-txt text-justify">We believe, being transparent & prioritizing
+                                        Client’s needs builds a strong relationship.</p><br>
                                 </div>
                             </div>
                         </div>
@@ -1426,7 +1477,7 @@
                             <div class="address-text">
                                 <span class="label">Phone:</span>
                                 <a href="tel:0431-2964305">0431-2964305</a>
-                                
+
                             </div>
                         </div>
                         <div class="address-box">
