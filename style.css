@@ -74,6 +74,9 @@ border-radius: 10px;
 
 
 }
+#agile{
+  display: none;
+}
 .item1{
   /* background-color: red; */
   grid-column: 1 / span 2;
@@ -83,6 +86,55 @@ background-repeat: no-repeat;
 background-position: 65% 60%;
 background-size: cover;
 
+}
+.subscribe{
+  background-color: #095fd0;
+  padding: 5px !important;
+  border-radius: 5px ;
+  color: white !important;
+  margin-bottom: 20px !important;
+
+  
+animation: scalexxyy 1s ease-in-out infinite alternate ;
+
+ 
+}
+.subscribe:hover{
+  background-color: #2e7ce2;
+  color: white;
+}
+.slideani{
+  
+  animation: slider 4s linear 1 ;
+
+}
+
+
+@keyframes slider {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  /* 50% {
+    transform: translateX(-50%);
+    opacity: .5;
+  } */
+  80% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes scalexxyy {
+  from {
+    transform: scale(.9);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .item2{
   /* background-color: pink; */
@@ -205,7 +257,12 @@ display: none;
  transition: all 259ms ease-in-out;
 }
 
-
+#yes3{
+  display: none;
+}
+#talentaq{
+  display: none;
+}
 .rs-menu ul ul {
 
   background-color: #f7f7f9 !important;
@@ -615,7 +672,7 @@ ul {
 }
 
 .bg7 {
-  background: url(assets/images/bg/cta-bg.jpg);
+  background: url(assets/images/cta-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -996,6 +1053,7 @@ ul {
 #scrollUp.purple-color i {
   color: white;
   background: #498c45;
+  /* background: #0024ba; */
 }
 
 .btn_wrap {
@@ -1019,6 +1077,7 @@ ul {
   will-change: transform;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  /* background-color: #0024ba; */
 }
 
 .btn_wrap:hover {
@@ -1060,6 +1119,7 @@ ul {
   width: 240px;
   height: 64px;
   border-radius: 80px;
+  /* background-color: #0024ba; */
 }
 
 .container1 i:nth-of-type(1) {
@@ -2119,8 +2179,8 @@ blockquote cite:before {
 .blog-button.inner-blog a:after {
   content: "\f114";
   position: absolute;
-  /* font-family: flaticon; */
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'flaticon';
+  /* font-family: 'Nanum Gothic', sans-serif; */
   font-size: 15px;
   top: 1px;
   right: 0;
@@ -3135,6 +3195,7 @@ blockquote cite:before {
   display: inline-block;
   padding-right: 25px;
   padding-left: 25px;
+  margin-top: 10px;
   border-right: 1px solid #eee;
   font-size: 14px;
 }
@@ -3302,6 +3363,7 @@ blockquote cite:before {
   align-items: center;
   justify-content: flex-end;
   float: left;
+ 
 }
 
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li {
@@ -3762,7 +3824,9 @@ blockquote cite:before {
 
 .full-width-header .rs-header.style3 .menu-area {
   background: transparent;
-  padding: 13px 0;
+  /* padding: 12px 0px; */
+  margin-bottom: 10px;
+
 }
 
 .full-width-header .rs-header.style3 .menu-area .logo-part a .sticky-logo {
@@ -3789,11 +3853,13 @@ blockquote cite:before {
   position: relative;
   align-items: center;
   justify-content: flex-end;
+
 }
 
 .full-width-header .rs-header.style3 .menu-area .main-menu .rs-menu ul.nav-menu li {
   display: inline-block;
-  padding: 0;
+  padding: 0px;
+
 }
 
 .full-width-header .rs-header.style3 .menu-area .main-menu .rs-menu ul.nav-menu li.menu-item-has-children:hover>a:before {
