@@ -1514,6 +1514,11 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .span1,.btn_wrap{
+        width: 100px;
+       
+        font-size: 12px;
+    }  
     .rs-testimonial.style9 .testi-item {
         padding: 30px 18px 10px 20px;
     }
