@@ -774,7 +774,7 @@ ul {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    padding: 100px 60px 480px 50px;
+    padding: 100px 60px 560px 50px;
     border-radius: 10px 10px 10px 10px;
   }
 }
@@ -843,6 +843,7 @@ ul {
   }
   
 }
+
 @media screen and (max-width: 450px) {
 
 /* //kkkk */
@@ -1658,12 +1659,19 @@ blockquote cite:before {
   margin-top: 10px;
 }
 .btext{
-z-index: -3;
-position: absolute;
+  z-index: 1;
+  position: relative;
 }
 .bimag{
-z-index: 1;
-position: relative;
+  position: absolute;
+  left: 200px;
+  top: -24px;
+  z-index: -3;
+
+
+}
+.ss{
+  padding: 1rem;
 }
 /* ------------------------------------
     02. Global Class CSS
@@ -8126,7 +8134,7 @@ body .search-modal .close:hover {
 
 .rs-services.style3 .services-item.services-item {
   padding: 50px 36px 50px 36px;
-  height: 400px;
+  height: 455px;
 }
 
 .rs-services.style3.modify1 .services-item {
@@ -8687,7 +8695,7 @@ body .search-modal .close:hover {
 
 .rs-process .rs-addon-number .number-text .number-txt {
   margin: 0;
-  padding-right: 34px;
+  /* padding-right: 34px; */
 }
 
 .rs-process.modify1 {
@@ -8774,6 +8782,7 @@ body .search-modal .close:hover {
   padding: 37px 30px 37px 38px;
   background-color: #FFFFFF;
   border-bottom: 7px solid #095fd0;
+  height: 370px;
 }
 
 .rs-process.style4 .rs-addon-number {
