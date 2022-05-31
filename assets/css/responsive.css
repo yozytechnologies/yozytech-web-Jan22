@@ -996,7 +996,7 @@
         line-height: 52px;
     }
     .rs-banner.style3.modify2 .banner-img img {
-        max-width: 100%;
+        /* max-width: 100%; */
     }
     .rs-video-wrap.style2 .rs-requset {
         padding: 100px 40px 100px 40px;

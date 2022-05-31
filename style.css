@@ -198,7 +198,17 @@ background-size: cover;
   
 }
 @media screen and (max-width: 576px) {
-
+.mbview{
+  text-align: center;
+}
+.rs-banner.style3.modify2 .banner-img img{
+  /* width: 200% !important; */
+}
+.ss{
+  padding: 1rem !important;
+ margin-left: 7.4rem ;
+  
+}
   .gallery{
       display: grid;
       grid-template-columns: 1fr;
@@ -845,6 +855,18 @@ ul {
 }
 
 @media screen and (max-width: 450px) {
+  .rs-banner.style3.modify2 .banner-img img{
+    width: 800px;
+    margin-left: -20%;
+    margin-top: -30%;
+  }
+  .rs-banner.style3.modify2,.ggg{
+    padding-top: 10px;
+  }
+ 
+  #services {
+margin-top: 50px;
+  }
 
 /* //kkkk */
 /* .btext{
@@ -1671,7 +1693,8 @@ blockquote cite:before {
 
 }
 .ss{
-  padding: 1rem;
+  padding: 1rem !important;
+
 }
 /* ------------------------------------
     02. Global Class CSS
@@ -3940,7 +3963,7 @@ blockquote cite:before {
 }
 
 .full-width-header .rs-header.style3 .menu-area.sticky {
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 
 .full-width-header .rs-header.style3 .menu-area.sticky .logo-part a .sticky-logo {
