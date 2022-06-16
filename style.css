@@ -111,7 +111,10 @@ animation: scalexxyy 1s ease-in-out infinite alternate ;
 .whatwedo{
   text-align: center;
 }
-
+.greens{
+  -webkit-text-fill-color:none;
+  color: red;
+}
 
 @keyframes slider {
   0% {
@@ -1106,9 +1109,9 @@ margin-top: 50px;
   align-items: center;
   overflow: hidden;
   cursor: pointer;
-  width: 200px;
+  width: 177px;
  
-  height: 50px;
+  height: 37px;
   background: #498c45;
   border-radius: 80px;
   padding: 0 18px;
@@ -1119,7 +1122,7 @@ margin-top: 50px;
   /* background-color: #0024ba; */
   color: #F1F5FB;
   background: rgb(47,32,173);
-  background: linear-gradient(145deg, rgba(47,32,173,0.6731734930300245) 0%, rgba(226,75,156,0.7263947815454307) 100%);
+  background: linear-gradient(145deg, #1273eb 30%, #03228f  100%);
   opacity: 1;
   
 }
@@ -1666,7 +1669,7 @@ blockquote cite:before {
   position: fixed;
   width: 50px;
   height: 50px;
-  bottom: 40px;
+  bottom: 27px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;
@@ -1675,6 +1678,30 @@ blockquote cite:before {
   box-shadow: 3px 4px 3px #999;
   left: 15px;
   z-index: 100;
+}
+#gotopb:hover{
+cursor:pointer;
+opacity: 0.9;
+}
+.gotop {
+  overflow: hidden;
+  position: fixed;
+  /* width: 50px;
+  height: 50px; */
+  padding: 10px;
+  bottom: 100px;
+  background-color: #106eea;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 3px 4px 3px #999;
+  right: 15px;
+  z-index: 100;
+  opacity: 0;
+}
+.gotop i{
+  color: white;
 }
 
 .my-float {
@@ -5020,15 +5047,18 @@ body .search-modal .close:hover {
 .color-navy {
   /* color: #000080; */
 
-  background: linear-gradient(250deg, #1273eb 30%, #03228f 100%);
+  /* background: linear-gradient(250deg, #1273eb 30%, #03228f 100%); */
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   font-size:2rem;
   max-width: 600px;
   font-weight: bolder;
-  text-transform:capitalize
+  text-transform:capitalize;
+  color:#03228f;
 }
-
+.opa{
+  opacity: 1;
+}
 .mr-40 {
   margin-right: 40px;
 }

@@ -411,14 +411,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
             </div>
         </div>
-            <div class="row align-items-center btext kkk">
+            <div id="main" class="row align-items-center btext kkk">
                 <div class="col-lg-6  col-sm-12 order-last ">
                   
                 </div>
                 <div class="col-lg-6 col-sm-12 " >
                     <div class="d-flex justify-content-center align-items-center mbview">
                         <h2 class="text-g ggg pt-100  
-                        color-navy  " >Transform your Enterprise through clouzy, elevate your business operations with YES and automate your deployment through DevOzy</h2>
+                        color-navy  " >Transform your Enterprise through <span class="text-dark">clou</span><span style="color: #5af03c;">z</span><span class="text-primary">y</span>, elevate your business operations with <span class="text-primary">Y</span><span style="color: #5af03c;">E</span><span class="text-danger">S</span> and automate your deployment through <span class="text-dark">Dev</span><span class="text-danger">O</span><span style="color: #5af03c;">z</span><span class="text-primary">y</span> </h2>
                         
                     </div>
                     <p  class="subtext mbview">We Yozy provides professional service with inlying agile delivery tool, profitable enterprise execution and melioration through IT Service Management Tool.
@@ -1766,6 +1766,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <i class="fa fa-whatsapp my-float"></i>
     </a>
+    <a  class="gotop" id="gotopb" target="_blank">
+       
+
+        <!-- <i class="fa fa-whatsapp my-float"></i> -->
+        <i class="fa fa-arrow-up"></i>
+    </a>
     <!-- start scrollUp  -->
     <div id="scrollUp" class="purple-color">
         <div class="btn_wrap subscribe">
@@ -1829,6 +1835,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
     <script>
+        var btn = $('#gotopb');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('gotop');
+    btn.addClass('opa');
+  } else {
+    // btn.removeClass('gotop');
+    btn.removeClass('opa');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0},'100');
+});
+
+
+
         var ww = document. body. clientWidth;
 if (ww < 450) {
 $('.kkk'). removeClass('btext');
