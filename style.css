@@ -1667,9 +1667,9 @@ blockquote cite:before {
 
 .whats-app {
   position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 27px;
+  width: 60px;
+  height:60px;
+  bottom: 21px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;
@@ -1683,25 +1683,50 @@ blockquote cite:before {
 cursor:pointer;
 opacity: 0.9;
 }
+.whats-app i{
+  margin-top: 15px;
+  font-size: 2.2rem;
+}
 .gotop {
-  overflow: hidden;
+  /* display: flex; */
+ 
   position: fixed;
-  /* width: 50px;
-  height: 50px; */
-  padding: 10px;
+  width: 40px;
+  height: 40px;
+  /* padding: 10px; */
+  /* padding: 0 5px 0 5px; */
+  /* margin-top: 2px; */
   bottom: 100px;
-  background-color: #106eea;
+  background-color: #0073ff;
   color: #FFF;
-  border-radius: 50px;
+  border-radius: 50%;
   text-align: center;
   font-size: 30px;
-  box-shadow: 3px 4px 3px #999;
-  right: 15px;
+  /* box-shadow: 3px 4px 3px #999; */
+  right: 35px;
   z-index: 100;
   opacity: 0;
+  /* align-items: center;
+  justify-content: center; */
+}
+.slow{
+  animation: fadeInAnimation ease .9s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.2s;
+
+}
+.slow2{
+  animation-delay: 1.3s;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
 }
 .gotop i{
   color: white;
+  margin-top: 2px;
+}
+.gotop:hover{
+  background-color: black;
 }
 
 .my-float {
