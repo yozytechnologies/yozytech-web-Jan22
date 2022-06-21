@@ -779,8 +779,8 @@ ul {
   }
   .myoutube2 {
     
-    width: 520px;
-    height: 305px;
+    width: 552px;
+    height: 310px;
   }
   .bg9 {
     background: url(assets/images/bg/work-bg.png);
@@ -807,13 +807,13 @@ ul {
 @media screen and (min-width: 1240px) {
   .myoutube {
     margin-left: 80px;
-    width: 520px;
-    height: 305px;
+    width: 552px;
+    height: 310px;
   }
   .myoutube2 {
     
-    width: 520px;
-    height: 305px;
+    width: 552px;
+    height: 310px;
   }
   
 }
