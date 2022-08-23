@@ -882,6 +882,7 @@ margin-top: 50px;
   } */
 }
 
+
 .bg10 {
   background-image: linear-gradient(250deg, #4e95ed 0%, #03228f 100%);
   background-repeat: no-repeat;
@@ -5075,8 +5076,8 @@ body .search-modal .close:hover {
   /* background: linear-gradient(250deg, #1273eb 30%, #03228f 100%); */
   -webkit-background-clip: text;
   /* -webkit-text-fill-color: transparent; */
-  font-size:2rem;
-  max-width: 600px;
+  font-size:1.8rem;
+  max-width: 800px;
   font-weight: bolder;
   text-transform:capitalize;
   color:#03228f;
