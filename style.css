@@ -87,6 +87,20 @@ background-position: 65% 60%;
 background-size: cover;
 
 }
+.sub-menu li{
+  width: 100%;
+}
+.rs-menu ul ul li a{
+    color: #004e92;
+}
+.tt .produ li a{
+  /* color: #004e92; */
+  width: 500px
+}
+.tt ul .produ{
+
+  width: 500px;
+}
 .subscribe{
   background-color: #095fd0;
   padding: 5px !important;
@@ -3515,7 +3529,7 @@ opacity: 0.9;
   height: 65px;
   line-height: 65px;
   padding: 0;
-  color: #ffffff;
+  /* color: #ffffff; */
   position: relative;
   font-family: 'Nanum Gothic', sans-serif;
 }
