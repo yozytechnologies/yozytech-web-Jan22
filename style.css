@@ -129,10 +129,10 @@ animation: scalexxyy 1s ease-in-out infinite alternate ;
   -webkit-text-fill-color:none;
   color: red;
 }
-.logo-image{
+
+.logo-image {
   margin-right: 4rem;
 }
-
 @keyframes slider {
   0% {
     transform: translateX(-100%);
@@ -887,12 +887,7 @@ ul {
   #services {
 margin-top: 50px;
   }
-        .mbview h2.ggg {
-      font-size: 1.3rem !important;
-    }
-    #main p.mbp{
-      font-size: .9rem !important;
-    }
+
 /* //kkkk */
 /* .btext{
   z-index: -3;
@@ -1761,7 +1756,7 @@ opacity: 0.9;
 }
 .bimag{
   position: absolute;
-  left: 500px;
+  left: 200px;
   top: -24px;
   z-index: -3;
 
@@ -1771,7 +1766,7 @@ opacity: 0.9;
   padding: 1rem !important;
 
 }
-.widthhalf{
+.widthhalf {
   max-width: 50%;
 }
 @media only screen and (max-width: 1200px) {
@@ -1788,13 +1783,6 @@ opacity: 0.9;
       font-size: 1.5rem !important;
     }
   }
-  /* .container{
-    max-width: 1020px;
-  } */
-    .rs-services.style3 .services-item.services-item {
- 
-      height: 100% !important;
-    }
 
      
         @media only screen and (max-width: 992px) {
@@ -1806,12 +1794,6 @@ opacity: 0.9;
         
         
           }
-                     .rs-services.style3 .services-item.services-item {
-                height: 100% !important;
-              }
-                    /* .container {
-                      max-width: 950px;
-                    } */
                      .ggg {
                        font-size: 2rem !important;
                      }
@@ -8180,7 +8162,6 @@ body .search-modal .close:hover {
 .rs-services.style3 .services-item .services-content .services-desc p {
   margin: 0px;
   font-family: 'Nanum Gothic', sans-serif;
-  text-align: justify;
 }
 
 #service-detail:hover .title-service {
@@ -8283,7 +8264,7 @@ body .search-modal .close:hover {
 
 .rs-services.style3 .services-item.services-item {
   padding: 50px 36px 50px 36px;
-  height: 655px;
+  height: 100%;
 }
 
 .rs-services.style3.modify1 .services-item {
