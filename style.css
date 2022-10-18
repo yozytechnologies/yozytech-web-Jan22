@@ -12098,11 +12098,12 @@ body .search-modal .close:hover {
 
 #image-wrap:hover+.project-name-image-hover {
   display: none;
-    text-align: justify;
+  text-align: justify;
 }
 
 .project-name-image-hover {
   padding-left: 45px;
+    text-align: justify;
 }
 
 .rs-testimonial.style7 .testi-main .testi-item .testi-content .images-wrap a:hover .testi-information+.rs-testimonial.style7 .testi-main .testi-item .testi-content .testi-information {
