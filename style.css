@@ -877,11 +877,26 @@ ul {
 @media screen and (max-width: 450px) {
   .rs-banner.style3.modify2 .banner-img img{
     width: 800px;
-    margin-left: -20%;
+    /* margin-left: -20%; */
     margin-top: -30%;
   }
   .rs-banner.style3.modify2,.ggg{
     padding-top: 10px;
+  }
+  .mbview h2.ggg{
+    font-size: 1.5rem !important;
+    
+    padding: 1rem;
+    
+  }
+  
+  .main--content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ss{
+margin-left: auto;
   }
  
   #services {
@@ -1754,14 +1769,14 @@ opacity: 0.9;
   z-index: 1;
   position: relative;
 }
-.bimag{
+/* .bimag{
   position: absolute;
   left: 200px;
   top: -24px;
   z-index: -3;
 
 
-}
+} */
 .ss{
   padding: 1rem !important;
 
@@ -1770,15 +1785,15 @@ opacity: 0.9;
   max-width: 50%;
 }
 @media only screen and (max-width: 1200px) {
-  .bimag {
-      position: absolute;
+  /* .bimag { */
+      /* position: absolute; */
       /* left: 40%; */
-      top: 1%;
+      /* top: 1%;
       z-index: -3;
-      width: 100%;
+      width: 100%; */
   
   
-    }
+    /* } */
     .ggg{
       font-size: 1.5rem !important;
     }
@@ -1786,14 +1801,14 @@ opacity: 0.9;
 
      
         @media only screen and (max-width: 992px) {
-        .bimag {
+        /* .bimag {
             position: absolute;
             left: 200px;
             top: -24px;
             z-index: -3;
         
         
-          }
+          } */
                      .ggg {
                        font-size: 2rem !important;
                      }
@@ -5261,9 +5276,19 @@ body .search-modal .close:hover {
 }
 
 .rs-banner.style3.modify2 .banner-img img {
-  max-width: 850px;
+  max-width: 600px;
   margin-bottom: 50px;
 }
+
+@media only screen and (max-width: 768px) {
+  .heroo {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
 
 .rs-banner.style3.modify2 .rs-animation {
   position: absolute;
@@ -12073,6 +12098,7 @@ body .search-modal .close:hover {
 
 #image-wrap:hover+.project-name-image-hover {
   display: none;
+    text-align: justify;
 }
 
 .project-name-image-hover {
@@ -14155,7 +14181,7 @@ body .search-modal .close:hover {
   animation-name: fadeInRight;
 }
 
-@keyframes {
+@keyframes test{
   0% {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
