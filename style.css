@@ -12073,6 +12073,7 @@ body .search-modal .close:hover {
 
 #image-wrap:hover+.project-name-image-hover {
   display: none;
+    text-align: justify;
 }
 
 .project-name-image-hover {
